@@ -5,7 +5,6 @@ export const PageContext = createContext();
 export const PageProvider = ({ children }) => {
   const [currentPageNumber, setCurrentPageNumber] = useState(0);
   return (
-    // Then we pass the current user that we get from firebase to the components
     <PageContext.Provider value={{ currentPageNumber, setCurrentPageNumber }}>
       {children}
     </PageContext.Provider>
