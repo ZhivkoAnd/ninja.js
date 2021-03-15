@@ -2,8 +2,16 @@ import React, { useState } from 'react';
 import Pagination from './Pagination';
 import Row from './Row';
 import Search from './Search';
-// import  { useContext } from 'react';
+// import { useContext } from 'react';
 // import { PageContext } from './PageContext';
+
+// I have the idea to add context API so i can prevent prop drilling in the future..which will allow to easily add new components, 
+//   without stacking unneeded properties, but i have some errors.. 
+// I havent worked with App.test.js before, and adding Context API with the 'const rows' is giving me plenty of errors, I can move the const from there and fix it,
+//   but I know there must be a better way, I just dont know how to, for the time being.
+
+// I am sending it because I know it's a 2 hour task and I dont want to spend too much time on it. 
+// I don't have a lot of proffesional exp. with React, but I have a passion for it and I am learning fast. If I have some guidance, I can definitely achieve a lot.
 
 const DataTable = ({ initialRows, rowsPerPage = 40 }) => {
   const [rows, setRows] = useState(initialRows);

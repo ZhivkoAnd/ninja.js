@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import App from './App';
 
-const rows = [
+export const rows = [
   {
     name1: 'Mads L. Klausen',
     email: 'MadsLKlausen@jourrapide.com',

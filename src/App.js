@@ -4,11 +4,11 @@ import './App.css';
 // Importing the Context, just to showcase, but I am not using it.
 import { PageProvider } from './DataTable/PageContext';
 
-const App = (props) => {
+const App = ({rows}) => {
   return (
     <PageProvider>
       <div className='container mt-3'>
-        <DataTable initialRows={props.rows} locale='da' rowsPerPage={5} />
+        <DataTable initialRows={rows} locale='da' rowsPerPage={5} />
       </div>
     </PageProvider>
   );
